@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(130, 247, 247);
+    background-color: #e1ebf5;
     font-family: 'Spline Sans', sans-serif;
 }
 .container{
@@ -15,11 +15,61 @@ body{
     margin: 0 auto;
     padding: 5px;
 }
-/* Popular Collection */
+/* Navigation Menu */
+.heading{
+    display: flex;
+    height: 80px;
+    background-color: rgba(0, 128, 0, 0.137);
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+.nav-menu ul li, a{
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+/* --------------------
+header part
+----------------------- */
+
+.heading-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.heading-info{
+    width: 582px;
+    height: 270px;
+}
+.heading-img{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 20px;
+
+}
+.heading-img img{
+    width: 440px;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 60%;
+    
+}
+
+/*---------------
+ Popular Collection 
+ ----------------*/
+
 #collection-title{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 .product{
     display: grid;
@@ -27,25 +77,27 @@ body{
     grid-gap: 30px;
 }
 .product-details{
-    height: 450px;
+    height: 476px;
+    width: 329px;
     /* border: 1px solid black; */
-    padding: 20px;
-    background-color: rgb(247, 244, 241);
-    border-radius: 10px;
-    /* box-shadow: 5px 10px #888888; */
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .product-details img{
-    height: 200px;
+    height: 256px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 #product-name{
     font-size: 40px;
 }
 #price{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: bolder;
     font-size: 30px;
 }
@@ -61,7 +113,7 @@ body{
 }
 #read-more{
     color: green;
-    /* text-align: end; */
+    text-align: center;
     font-size: 20px;
     margin: 20px 0px;
 }
@@ -70,4 +122,5 @@ body{
     font-size: 15px;
     background-color: green;
     color: white;
+    margin: 10px 0px;
 }
