@@ -40,9 +40,10 @@ body{
 /* --------------------
 header part
 ----------------------- */
-#influencer-info{
+#heading-description{
     text-align: justify;
-    margin-top: 20px;
+    padding-top: 10px;
+    line-height: 25px;
 }
 .heading-part{
     display: grid;
@@ -68,12 +69,23 @@ header part
     border-radius: 50%;
     
 }
-
+/*---------------------
+ brandicon
+ ----------------- */
+ #brandicon{
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .brandimg{
+     width: 100px;
+     height: 40px;
+     object-fit: cover;
+ }
 /*---------------
  Popular Collection 
  ----------------*/
 
-#collection-title{
+.collection-title{
     font-size: 40px;
     text-align: center;
     margin: 30px 0px;
